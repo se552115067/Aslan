@@ -12,23 +12,12 @@ labApp.config(['$routeProvider',
   function($routeProvider) {
   $routeProvider.
 
-      when('/listCourse',{
+      when('/home',{
           templateUrl: 'template/CourseList.html',
           controller: 'listCourseController'
       }).
-      when('/editCourse/:id',{
-          templateUrl: 'template/editCourse.html',
-          controller: 'editCourseController'
-      }). when('/addCourse',{
-          templateUrl: 'template/editCourse.html',
-          controller: 'addCourseController'
-      }).
-      when('/viewCourse/:id',{
-          templateUrl: 'template/CourseList.html',
-          controller: 'ViewCourseController'
-      }).
 
-      otherwise({redirectTo: '/listCourse'});
+      otherwise({redirectTo: '/home'});
 }]);
 
 labApp.config(function($translateProvider){
