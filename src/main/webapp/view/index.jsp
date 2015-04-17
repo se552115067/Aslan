@@ -30,41 +30,18 @@
 </head>
 <body>
 <div class="page-header">
-    <h1>CAMT
-        <small>Software Component Based Software Development</small>
-    </h1>
-    <div class="navbar navbar-default" ng-controller="languageController">
-        <div class="container-fluid">
-            <div class="collapse navbar-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a translate href="#/addCourse">listCourse.addCourse</a></li>
-                    <li><a translate href="#/listCourse" >listCourse.allCourse</a></li>
-                    <li ng-class="{'active':currentLocale=='en'}"><a href="" ng-click="changeLanguage('en')">EN</a></li>
-                    <li ng-class="{'active':currentLocale=='en'}"><a href="" ng-click="changeLanguage('th')">TH</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
+    <h1>CAMT <small>Software Component Based Software Development</small></h1>
 </div>
+<ul class="menu">
+    <li><a href="#/home">Home</a></li>
+    <li><a href="#/history">History</a></li>
+    <li><a href="#/activity">Activity</a></li>
+    <li><a href="#/gallery">Gallery</a></li>
+    <li><a href="#/map">Map</a></li>
+    <li><a href="#/contact">Contact</a></li>
+</ul>
 
-
-
-<div class="container-fluid">
-    <div class="row">
-    <div class="col-md-2">
-        <!-- Fixed left nav column -->
-
-    </div>
-    <div class="col-md-10">
-        <!-- Breadcrumbs
-       ================================================== -->
-
-
-            <ng-view>Loading...</ng-view>
-
-    </div>
-    </div>
-</div>
+<div ng-view></div>
 
 
 

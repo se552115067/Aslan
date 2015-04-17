@@ -13,11 +13,24 @@ labApp.config(['$routeProvider',
   $routeProvider.
 
       when('/home',{
-          templateUrl: 'template/CourseList.html',
-          controller: 'listCourseController'
+          templateUrl: 'template/home.html'
+      }).
+      when('/history',{
+          templateUrl: 'template/history.html'
+      }). when('/activity',{
+          templateUrl: 'template/activity.html'
+      }).
+      when('/gallery',{
+          templateUrl: 'template/gallery.html'
+      }).
+      when('/map',{
+          templateUrl: 'template/map.html'
+      }).
+      when('/contact',{
+          templateUrl: 'template/contact.html'
       }).
 
-      otherwise({redirectTo: '/home'});
+      otherwise({redirectTo: '/listCourse'});
 }]);
 
 labApp.config(function($translateProvider){
