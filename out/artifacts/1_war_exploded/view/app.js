@@ -34,9 +34,3 @@ labApp.config(['$routeProvider',
       otherwise({redirectTo: '/listCourse'});
 }]);
 
-labApp.config(function($translateProvider){
-    $translateProvider.useUrlLoader('/messageBundle');
-    $translateProvider.useStorage('UrlLanguageStorage');
-    $translateProvider.preferredLanguage('en');
-    $translateProvider.fallbackLanguage('en');
-})
