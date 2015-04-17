@@ -17,7 +17,8 @@ labApp.config(['$routeProvider',
       }).
       when('/history',{
           templateUrl: 'template/history.html'
-      }). when('/activity',{
+      }).
+      when('/activity',{
           templateUrl: 'template/activity.html'
       }).
       when('/gallery',{
@@ -33,9 +34,3 @@ labApp.config(['$routeProvider',
       otherwise({redirectTo: '/listCourse'});
 }]);
 
-labApp.config(function($translateProvider){
-    $translateProvider.useUrlLoader('/messageBundle');
-    $translateProvider.useStorage('UrlLanguageStorage');
-    $translateProvider.preferredLanguage('en');
-    $translateProvider.fallbackLanguage('en');
-})

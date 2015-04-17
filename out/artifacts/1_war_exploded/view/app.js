@@ -17,7 +17,8 @@ labApp.config(['$routeProvider',
       }).
       when('/history',{
           templateUrl: 'template/history.html'
-      }). when('/activity',{
+      }).
+      when('/activity',{
           templateUrl: 'template/activity.html'
       }).
       when('/gallery',{
