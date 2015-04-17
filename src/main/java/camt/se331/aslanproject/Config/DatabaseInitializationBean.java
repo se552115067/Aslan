@@ -17,15 +17,11 @@ public class DatabaseInitializationBean implements InitializingBean {
     UserRepository userRepository;
     @Override
     public void afterPropertiesSet() throws Exception {
-        User[] initCourse = {
-                new Course(1l,"953101","Computer and Programming",3,701),
-                new Course(2l,"953331","Compo Base Software",3,701),
-                new Course(3l,"953321","SQA",3,701),
-                new Course(4l,"953351","Test",3,701)
+        User[] initUser = {
 
 
         };
-        courseRepository.save(Arrays.asList(initCourse));
+        userRepository.save(Arrays.asList(initUser));
 
     }
 } 
